@@ -1,39 +1,58 @@
-<div class="login-logo mt-4 mb-4 text-center">
-    <a href=""><img src="./assets/oims-logo.png" width="125"></a>
-</div>
-<div class="col 4 mb-4 d-flex aligns-items-center justify-content-center" style="height:100px">
-    <div class="col-4 mt-4">
-        <h1 class="h4 mb-3">Sign In</h1>
-
-        <div class="form-group">
-            <label class="label-title mb-1">Email Id</label>
-            <input class="form-control" data-val="true" data-val-required="Email Id is required." id="EmailId"
-                name="EmailId" type="text" value="">
-            <span class="field-validation-valid text-danger" data-valmsg-for="EmailId"
-                data-valmsg-replace="true"></span>
-        </div>
-        <div class="form-group">
-            <label class="label-title mb-1">Password</label>
-            <input class="form-control" data-val="true" data-val-required="Password is required" id="Password"
-                name="Password" type="password">
-            <span class="field-validation-valid text-danger" data-valmsg-for="Password"
-                data-valmsg-replace="true"></span>
-        </div>
-        <div class="form-group text-end">
-            <a class="forgotPassword" href="/Account/ForgotPassword">Forgot Password?</a>
-        </div>
-        <div class="form-group">
-            <div class="col-md-10">
-                <input data-val="true" data-val-required="The Remember me field is required." id="RememberMe"
-                    name="RememberMe" type="checkbox" value="true"><input name="RememberMe" type="hidden" value="false">
-                <label class="control-label col-md-4" for="RememberMe">Remember me</label>
-                <span class="field-validation-valid text-danger" data-valmsg-for="RememberMe"
-                    data-valmsg-replace="true"></span>
-            </div>
-        </div>
-        <div class="mt-4">
-            <button class="w-100 btn btn-lg btn-primary" id="btnlogin" type="submit">Sign In</button>
-        </div>
+<div class="container">
+    <div class="login-logo mt-5 mb-3 text-center">
+        <a href=""><img src="./assets/oims-logo.png" width="125"></a>
     </div>
+    <form [formGroup]="loginForm" autocomplete="off" (ngSubmit)="loginSubmitted()">
+        <div class="col 4 mb-4 d-flex aligns-items-center justify-content-center" style="height:100px">
+            <div class="col-4 mt-4">
+                <h1 class="h4 mb-3">Sign In</h1>
 
+                <div class="form-group" autocomplete="off">
+                    <label for="email" class="label-title mb-1">Email Id</label>
+                    <input class="form-control" data-val="true" data-val-required="Email Id is required." id="EmailId"
+                        name="EmailId" type="text" value="" formControlName="email">
+                    <span class="field-validation-valid text-danger" data-valmsg-for="EmailId"
+                        data-valmsg-replace="true"></span>
+                    <div class="form-text text-danger"
+                        *ngIf="Email.errors?.['required'] && (Email.dirty || Email.touched)">Email is Required</div>
+                    <div class="form-text text-danger"
+                        *ngIf="Email.errors?.['email'] && (Email.dirty || Email.touched)">Email is Invalid</div>
+                </div>
+                <div class="form-group" autocomplete="off">
+                    <label for="pwd" class="label-title mb-1">Password</label>
+                    <input class="form-control" data-val="true" data-val-required="Password is required" id="Password"
+                        name="Password" type="password" formControlName="pwd">
+                    <span class="field-validation-valid text-danger" data-valmsg-for="Password"
+                        data-valmsg-replace="true"></span>
+                    <div class="form-text text-danger" *ngIf="PWD.errors?.['required'] && (PWD.dirty || PWD.touched)">
+                        Password is Required</div>
+                    <div class="form-text text-danger"
+                        *ngIf="PWD.errors?.['minlength'] || PWD.errors?.['maxlength'] && (Email.dirty || Email.touched)">
+                        Password should be of minimum 6 characters and maximum 15 characters</div>
+                </div>
+                <div class="form-group text-end">
+                    <a class="forgotPassword">Forgot Password?</a>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <input data-val="true" data-val-required="The Remember me field is required." id="RememberMe"
+                            name="RememberMe" type="checkbox" value="true"><input name="RememberMe" type="hidden"
+                            value="false">
+                        <label class="control-label col-md-4" for="RememberMe">Remember me</label>
+                        <span class="field-validation-valid text-danger" data-valmsg-for="RememberMe"
+                            data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+                <!-- <div class="mt-4">
+                    <button class="w-100 btn btn-lg btn-primary" id="btnlogin" type="submit"
+                        [disabled]="loginForm.invalid" (click)="goToHome()">Sign In</button>
+                </div> -->
+                <div class="mt-4">
+                    <button class="w-100 btn btn-lg btn-primary" id="btnlogin" type="submit"
+                        [disabled]="loginForm.invalid" routerLink="/home">Sign In</button>
+                </div>
+            </div>
+
+        </div>
+    </form>
 </div>
