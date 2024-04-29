@@ -11,5 +11,6 @@ export class TopNavbarComponent {
   {}
   
   currentUser: string = "Jay";
- 
+  firstInitial: string = this.currentUser[0];
+
 }
