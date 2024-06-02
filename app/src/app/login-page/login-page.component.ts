@@ -37,6 +37,5 @@ export class LoginPageComponent implements OnInit {
     return this.loginForm.get('pwd') as FormControl;
   }
   
- 
 }
 
