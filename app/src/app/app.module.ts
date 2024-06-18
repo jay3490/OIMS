@@ -14,6 +14,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { InwardComponent } from './inward/inward.component';
 import { SystemComponent } from './system/system.component';
 import { ReportComponent } from './report/report.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ReportComponent } from './report/report.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
