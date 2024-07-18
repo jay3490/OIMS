@@ -17,7 +17,6 @@ const routes: Routes = [
   {path: 'product', component: ProductComponent },
   {path: 'employee', component: EmployeeComponent },
   {path: 'inward', component: InwardComponent },
-  {path: 'system', component: SystemComponent },
   {path: 'report', component: ReportComponent },
   {path: '**', component: LoginPageComponent }
 ];

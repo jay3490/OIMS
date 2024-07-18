@@ -1,1 +1,209 @@
 <app-top-navbar></app-top-navbar>
+<div class="row mb-2">
+    <h4 class="h4 mb-4">Product List</h4>
+    <div class="col-md-12 text-right">
+        <span>
+            <a href="/ProductCategory/Create" class="btn btn-primary md-big">Add</a>
+            <a href="/ExcelData/ExportProductToExcel" class="btn btn-primary md-big" style="background-color: #038937">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+                    <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z"></path>
+                </svg>
+            </a>
+        </span>
+    </div>
+    <div class="col-md-2">
+        <br>
+        <br>
+        <br>
+        <div class="list-group" style="padding-top:3em;">
+            <a class="list-group-item active" href="/ProductCategory/Index">All</a>
+<a class="list-group-item" href="/ProductCategory/Index?Categorys=Notebook">Notebook</a><a class="list-group-item" href="/ProductCategory/Index?Categorys=Headphone">Headphone</a><a class="list-group-item" href="/ProductCategory/Index?Categorys=Tablet">Tablet</a><a class="list-group-item" href="/ProductCategory/Index?Categorys=Chair">Chair</a><a class="list-group-item" href="/ProductCategory/Index?Categorys=Table">Table</a><a class="list-group-item" href="/ProductCategory/Index?Categorys=Mobile">Mobile</a><a class="list-group-item" href="/ProductCategory/Index?Categorys=Laptop">Laptop</a><a class="list-group-item" href="/ProductCategory/Index?Categorys=Keyboard%20and%20Mouse%20">Keyboard and Mouse </a><a class="list-group-item" href="/ProductCategory/Index?Categorys=Pen">Pen</a>            </div>
+    </div>
+    <div class="col-md-10">
+
+        <table>
+            <tbody><tr>
+                <th>
+                    <select class="form-select" id="StatusName" name="StatusName"><option value="">All</option>
+<option value="5e6034af-8726-4642-965a-f92273104e1f">Assigned</option>
+<option value="8260565c-b353-4997-b08a-6968ed7d6e0c">Available</option>
+</select>
+                </th>
+            </tr>
+        </tbody></table>
+
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <thead>
+                    <tr>
+                        <th>
+                        </th>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Model No.
+                        </th>
+                        <th>
+                            Category
+                        </th>
+                        
+                        <th>
+                            Condition
+                        </th>
+                        <th>
+                            Location
+                        </th>
+                        <th>
+                            Status
+                        </th>
+                        <th>
+                            Active
+                        </th>
+                        <th scope="col" width="150">Action</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                        <tr class="align-middle">
+                            <td>
+                                <img class="img-thumbnail" style="height:50px" src="/Content/Productimages/">
+                            </td>
+                            <td>
+                                <a href="/ProductHistory/Index/a44f977d-dd0f-4bc1-b869-3793f98cb827" style="text-decoration:none">Ipad M1 2022 series </a>
+                            </td>
+                            <td>
+                                Ipad m1 268GB
+                            </td>
+                            <td>
+                                Tablet
+                            </td>
+                            
+                            <td>
+                                Poor
+                            </td>
+                            <td>
+                                Ahmedabad
+                            </td>
+                            <td>
+                                Assigned
+                            </td>
+                            <td>
+<div class="img-circle"><img src="/Content/images/check.png" alt="editok" width="16"></div>                                </td>
+                            <td>
+                                <div class="action-icons">
+                                    <a href="/Productcategory/Edit/a44f977d-dd0f-4bc1-b869-3793f98cb827"><img src="/Content/images/edit.png" alt="edit" width="16"></a>
+                                    <a href="/Productcategory/Delete/a44f977d-dd0f-4bc1-b869-3793f98cb827" onclick="return confirm('Are you sure you want to Delete??')"><img src="/Content/images/delete.png" alt="delete" width="16"></a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                    <tbody>
+                        <tr class="align-middle">
+                            <td>
+                                <img class="img-thumbnail" style="height:50px" src="/Content/Productimages/">
+                            </td>
+                            <td>
+                                <a href="/ProductHistory/Index/206ed0fc-47b1-4163-a43b-73cf522adceb" style="text-decoration:none">Lenovo</a>
+                            </td>
+                            <td>
+                                540
+                            </td>
+                            <td>
+                                Laptop
+                            </td>
+                            
+                            <td>
+                                Good
+                            </td>
+                            <td>
+                                Ahmedabad
+                            </td>
+                            <td>
+                                Assigned
+                            </td>
+                            <td>
+<div class="img-circle"><img src="/Content/images/check.png" alt="editok" width="16"></div>                                </td>
+                            <td>
+                                <div class="action-icons">
+                                    <a href="/Productcategory/Edit/206ed0fc-47b1-4163-a43b-73cf522adceb"><img src="/Content/images/edit.png" alt="edit" width="16"></a>
+                                    <a href="/Productcategory/Delete/206ed0fc-47b1-4163-a43b-73cf522adceb" onclick="return confirm('Are you sure you want to Delete??')"><img src="/Content/images/delete.png" alt="delete" width="16"></a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                    <tbody>
+                        <tr class="align-middle">
+                            <td>
+                                <img class="img-thumbnail" style="height:50px" src="/Content/Productimages/">
+                            </td>
+                            <td>
+                                <a href="/ProductHistory/Index/b30aeb4b-fc9d-43fe-b0df-8e84ab8f8b6d" style="text-decoration:none">VERMORA</a>
+                            </td>
+                            <td>
+                                a1000
+                            </td>
+                            <td>
+                                Table
+                            </td>
+                            
+                            <td>
+                                Good
+                            </td>
+                            <td>
+                                Ahmedabad
+                            </td>
+                            <td>
+                                Assigned
+                            </td>
+                            <td>
+<div class="img-circle"><img src="/Content/images/check.png" alt="editok" width="16"></div>                                </td>
+                            <td>
+                                <div class="action-icons">
+                                    <a href="/Productcategory/Edit/b30aeb4b-fc9d-43fe-b0df-8e84ab8f8b6d"><img src="/Content/images/edit.png" alt="edit" width="16"></a>
+                                    <a href="/Productcategory/Delete/b30aeb4b-fc9d-43fe-b0df-8e84ab8f8b6d" onclick="return confirm('Are you sure you want to Delete??')"><img src="/Content/images/delete.png" alt="delete" width="16"></a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                    <tbody>
+                        <tr class="align-middle">
+                            <td>
+                                <img class="img-thumbnail" style="height:50px" src="/Content/Productimages/">
+                            </td>
+                            <td>
+                                <a href="/ProductHistory/Index/145b2c3a-f14c-4bdf-8371-8f3cf20befc4" style="text-decoration:none">Pen</a>
+                            </td>
+                            <td>
+                                PEN01
+                            </td>
+                            <td>
+                                stationary
+                            </td>
+                            
+                            <td>
+                                Good
+                            </td>
+                            <td>
+                                Ahmedabad
+                            </td>
+                            <td>
+                                Available
+                            </td>
+                            <td>
+<div class="img-circle"><img src="/Content/images/check.png" alt="editok" width="16"></div>                                </td>
+                            <td>
+                                <div class="action-icons">
+                                    <a href="/Productcategory/Edit/145b2c3a-f14c-4bdf-8371-8f3cf20befc4"><img src="/Content/images/edit.png" alt="edit" width="16"></a>
+                                    <a href="/Productcategory/Delete/145b2c3a-f14c-4bdf-8371-8f3cf20befc4" onclick="return confirm('Are you sure you want to Delete??')"><img src="/Content/images/delete.png" alt="delete" width="16"></a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+            </table>
+        </div>
+    </div>
+</div>

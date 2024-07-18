@@ -1,1 +1,261 @@
 <app-top-navbar></app-top-navbar>
+<div class="container">
+    <h4 class="h4 mb-4">Employee List</h4>
+    <div class="col-md-12 text-right">
+        <a href="/Employee/Create" class="btn btn-primary">Add</a>
+        <a href="/ExcelData/ExportEmployeeToExcel" class="btn btn-primary md-big" style="background-color: #038937">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+                <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z"></path>
+            </svg>
+        </a>
+    </div>
+    <br>
+
+    <div class="col-md-10">
+        <table>
+            <tbody><tr>
+                <th>
+                    <select class="form-select" id="DeptName" name="DeptName"><option value="">All</option>
+<option value="a84e54e6-600d-40fc-b270-0cc43a04da8a">UI/UX Designer</option>
+<option value="9cddbd09-4747-4548-a700-2bab26fe6ae4">Software Developer</option>
+<option value="eab71d8b-e6c7-4e42-81b9-65ef09eb877e">Accountant</option>
+<option value="242f9a95-09ea-45bd-a6a1-6bdd35ef69bd">Accountant</option>
+<option value="d3d84e2a-9fd4-49eb-ace4-764eeff2a72c">Backend Developer</option>
+<option value="ddad91ca-fb76-47dc-ac92-83aa5a196c61">Front End Developer</option>
+<option value="a66f2394-a6ba-4a7d-82dd-91b0fee587c8">Business Analyst</option>
+<option value="4764c7e7-1e94-472d-84eb-bcffa91afa20">Quality Analyst</option>
+</select>
+                </th>
+               
+                   
+                
+            </tr>
+        </tbody></table>
+    </div>
+
+
+    <div class="table-responsive">
+        <table class="table table-sm">
+            <thead class="bg-gray">
+                <tr>
+                    <th>
+                        Code
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Email Id
+                    </th>
+                    <th>
+                        Phone No.
+                    </th>
+                    <th>
+                        Department
+                    </th>
+                    <th>
+                        Status
+                    </th>
+                    <th>
+                        Date Of Joining
+                    </th>
+                    
+                    <th scope="col" width="150">Action</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <tr class="align-middle">
+                        <td>
+                            A000
+                        </td>
+                        <td>
+                            <a href="/EmployeeDetail/Index/9979ffaa-59a6-40ab-968e-ca7b20e30fc6" style="text-decoration:none">chandraprakash prajapati</a>
+                        </td>
+                        <td id="test">
+                            <a href="mailto:cp@gmail.com">cp@gmail.com</a>
+                        </td>
+                        <td>
+                            9997979799
+                        </td>
+                        <td>
+                            Business Analyst
+                        </td>
+                        <td>
+                            Active
+                        </td>
+                        <td>
+                            12-09-2022
+                        </td>
+                        
+                        <td>
+                            <div class="action-icons">
+                                <a href="/Employee/Edit/9979ffaa-59a6-40ab-968e-ca7b20e30fc6"><img src="/Content/images/edit.png" alt="edit" width="16"></a>
+                                <a href="/Employee/Delete/9979ffaa-59a6-40ab-968e-ca7b20e30fc6" onclick="return confirm('Are you sure you want to Delete??')"><img src="/Content/images/delete.png" alt="delete" width="16"></a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr class="align-middle">
+                        <td>
+                            A001
+                        </td>
+                        <td>
+                            <a href="/EmployeeDetail/Index/3c5a890a-d36d-4bd3-82d6-b1373677102c" style="text-decoration:none">Dharmil Ranpura</a>
+                        </td>
+                        <td id="test">
+                            <a href="mailto:dharmil@gmail.com">dharmil@gmail.com</a>
+                        </td>
+                        <td>
+                            9512346780
+                        </td>
+                        <td>
+                            Software Developer
+                        </td>
+                        <td>
+                            Active
+                        </td>
+                        <td>
+                            08-09-2022
+                        </td>
+                        
+                        <td>
+                            <div class="action-icons">
+                                <a href="/Employee/Edit/3c5a890a-d36d-4bd3-82d6-b1373677102c"><img src="/Content/images/edit.png" alt="edit" width="16"></a>
+                                <a href="/Employee/Delete/3c5a890a-d36d-4bd3-82d6-b1373677102c" onclick="return confirm('Are you sure you want to Delete??')"><img src="/Content/images/delete.png" alt="delete" width="16"></a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr class="align-middle">
+                        <td>
+                            AI002
+                        </td>
+                        <td>
+                            <a href="/EmployeeDetail/Index/11c16f2f-3f12-46fd-aa2d-e66c8babd254" style="text-decoration:none">Yash Aghara</a>
+                        </td>
+                        <td id="test">
+                            <a href="mailto:yaghara@aakashinformatics.com">yaghara@aakashinformatics.com</a>
+                        </td>
+                        <td>
+                            6354164469
+                        </td>
+                        <td>
+                            Software Developer
+                        </td>
+                        <td>
+                            Active
+                        </td>
+                        <td>
+                            03-01-2022
+                        </td>
+                        
+                        <td>
+                            <div class="action-icons">
+                                <a href="/Employee/Edit/11c16f2f-3f12-46fd-aa2d-e66c8babd254"><img src="/Content/images/edit.png" alt="edit" width="16"></a>
+                                <a href="/Employee/Delete/11c16f2f-3f12-46fd-aa2d-e66c8babd254" onclick="return confirm('Are you sure you want to Delete??')"><img src="/Content/images/delete.png" alt="delete" width="16"></a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr class="align-middle">
+                        <td>
+                            AI118
+                        </td>
+                        <td>
+                            <a href="/EmployeeDetail/Index/f92d4dbd-b29d-4bce-a4e3-974484a599be" style="text-decoration:none">Dheer Patel</a>
+                        </td>
+                        <td id="test">
+                            <a href="mailto:dpatel@aakashinformatics.com">dpatel@aakashinformatics.com</a>
+                        </td>
+                        <td>
+                            6353996710
+                        </td>
+                        <td>
+                            Software Developer
+                        </td>
+                        <td>
+                            Active
+                        </td>
+                        <td>
+                            04-02-2022
+                        </td>
+                        
+                        <td>
+                            <div class="action-icons">
+                                <a href="/Employee/Edit/f92d4dbd-b29d-4bce-a4e3-974484a599be"><img src="/Content/images/edit.png" alt="edit" width="16"></a>
+                                <a href="/Employee/Delete/f92d4dbd-b29d-4bce-a4e3-974484a599be" onclick="return confirm('Are you sure you want to Delete??')"><img src="/Content/images/delete.png" alt="delete" width="16"></a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr class="align-middle">
+                        <td>
+                            AI119
+                        </td>
+                        <td>
+                            <a href="/EmployeeDetail/Index/5d58d236-e6b2-42de-a769-8f08f042b89c" style="text-decoration:none">Tanvi bhut</a>
+                        </td>
+                        <td id="test">
+                            <a href="mailto:tbhut@aakashinformatics.com">tbhut@aakashinformatics.com</a>
+                        </td>
+                        <td>
+                            5689565625
+                        </td>
+                        <td>
+                            Software Developer
+                        </td>
+                        <td>
+                            Active
+                        </td>
+                        <td>
+                            23-02-2022
+                        </td>
+                        
+                        <td>
+                            <div class="action-icons">
+                                <a href="/Employee/Edit/5d58d236-e6b2-42de-a769-8f08f042b89c"><img src="/Content/images/edit.png" alt="edit" width="16"></a>
+                                <a href="/Employee/Delete/5d58d236-e6b2-42de-a769-8f08f042b89c" onclick="return confirm('Are you sure you want to Delete??')"><img src="/Content/images/delete.png" alt="delete" width="16"></a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr class="align-middle">
+                        <td>
+                            AI120
+                        </td>
+                        <td>
+                            <a href="/EmployeeDetail/Index/459dd9db-5186-420d-8b0a-d37b39f720c2" style="text-decoration:none">Shubham Godhani</a>
+                        </td>
+                        <td id="test">
+                            <a href="mailto:sgodhani@aakashinformatics.com">sgodhani@aakashinformatics.com</a>
+                        </td>
+                        <td>
+                            1234567890
+                        </td>
+                        <td>
+                            Front End Developer
+                        </td>
+                        <td>
+                            Active
+                        </td>
+                        <td>
+                            04-02-2022
+                        </td>
+                        
+                        <td>
+                            <div class="action-icons">
+                                <a href="/Employee/Edit/459dd9db-5186-420d-8b0a-d37b39f720c2"><img src="/Content/images/edit.png" alt="edit" width="16"></a>
+                                <a href="/Employee/Delete/459dd9db-5186-420d-8b0a-d37b39f720c2" onclick="return confirm('Are you sure you want to Delete??')"><img src="/Content/images/delete.png" alt="delete" width="16"></a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+        </table>
+    </div>
+
+</div>
