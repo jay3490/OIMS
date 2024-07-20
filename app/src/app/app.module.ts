@@ -15,6 +15,8 @@ import { InwardComponent } from './inward/inward.component';
 import { SystemComponent } from './system/system.component';
 import { ReportComponent } from './report/report.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { NgChartsModule } from 'ng2-charts';
+import { ChartsComponent } from './charts/charts.component';
 
 @NgModule({
   declarations: [
@@ -28,14 +30,16 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     EmployeeComponent,
     InwardComponent,
     SystemComponent,
-    ReportComponent
+    ReportComponent,
+    ChartsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
